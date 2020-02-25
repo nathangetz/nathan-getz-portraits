@@ -1,0 +1,190 @@
+/* CSS Document */
+
+body {
+	width: 80vw;
+	margin: 7vw auto;
+	font-size: 12pt;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	justify-content: center;
+	color: #555;
+}
+
+a {text-decoration: none;}
+hr {margin: 15px 0; height: 1px; background-color: dimgray; border: none;}
+
+.bio {
+    overflow: hidden;
+	margin-bottom: 15px;
+}
+
+.bio img {width: 240px; margin-right: 15px; float: left;}
+
+.bio p {
+	margin-left: 15px;
+	margin: 0;
+	
+	text-align: justify;
+}
+
+.rotating-slides {
+	display: block;
+	width: 100%;
+}
+
+.rotating-slides img {
+	width: inherit;
+	height: 100%;
+}
+.hero {
+	position: relative;
+	width: 100%;
+	height: 90vh;
+	overflow: hidden;
+	margin-bottom: 10vh;
+}
+.hero-text {
+	height: inherit;
+	width: inherit;
+	position: absolute;
+	top: 0;
+	font-weight: 300;
+	-webkit-user-select: none; /* Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+/Edge */
+	user-select: none; /* Standard */
+	cursor: default;
+	font-size: 55pt;
+	line-height: 90vh;
+	text-align: center;
+	color: white;
+}
+.hero-image {
+	width: 100%;
+	height: 80vh;
+	background: no-repeat center;
+	background-size: 100% auto;
+}
+
+
+
+.banners {
+	font-weight: 300;
+	-webkit-user-select: none; /* Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+/Edge */
+	user-select: none; /* Standard */
+	cursor: default;
+}
+.container {
+	margin: 10px 0;
+	width: 100%;
+	position: relative;
+	height: 150px;
+	overflow: hidden;
+}
+
+/*Banner image*/
+#portfolio-hero {background-image: url("../images/portfolio-hero.jpg");}
+#portrait-hero {background-image: url("../images/portrait-hero.jpg")}
+
+.banner {
+	font-size: 55pt;
+	line-height: 150px;
+	text-align: center;
+	width: inherit;
+	position: absolute;
+	background: #000 no-repeat center;
+	background-size: 110% auto;
+}
+.banner a {
+	text-decoration: none;
+	color: #EEE;
+	transition: 0.35s;
+}
+
+.banner span {color: white;}
+
+.banner {
+	left: 0px;
+	right: 0px;
+	transition: 0.5s;
+	transition-timing-function: ease-out;
+}
+.banner a:hover {
+	font-size: 56pt;
+	line-height: 145px;
+	color: white;
+	transition: 0.15s;
+}
+.container:hover .banner.left {
+	background-position: left;
+	left: -200px;
+	transition: 0.35s;
+	transition-timing-function: ease-out;
+}
+.container:hover .banner.right {
+	background-position: right;
+	left: 200px;
+	transition: 0.35s;
+	transition-timing-function: ease-out;
+}
+
+.text-container {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	position: relative;
+	height: inherit;
+	display: flex;
+	z-index: -1;
+}
+
+.container:hover .banner-info {
+	width: 190px;
+	transition: 0.35s;
+	transition-timing-function: ease-in-out;
+}
+/*Banner info container*/
+.banner-info {width: 300px;transition: 0.35s;transition-timing-function: ease-out;} /* Distance from margin*/
+/*Set text alignment, center div vertically, and justify divs right/left */
+.banner-info.right {margin: auto 0 auto auto;}
+.banner-info.left {text-align: right; margin: auto auto auto 0;}
+.heading {
+	font-family: "Montserrat", sans-serif;
+	font-size: 18pt;
+	font-weight: 400;
+	color: black;
+}
+
+.pricing {
+  	border-collapse: collapse;
+  	width: 100%;
+	font-size: auto;
+}
+
+.pricing td, .pricing th {
+  	border: 1px solid #dddddd;
+  	text-align: left;
+  	padding: 8px;
+}
+
+.pricing tr:nth-child(even) {background-color: #dddddd;}
+
+#calc {width: 100%;}
+#calc th:nth-child(1), #calc td:nth-child(1) {width: 25%;}
+#calc th:nth-child(2), #calc td:nth-child(2) {width: 75%;}
+
+footer p {text-align: center;}
+
+.input-button {
+	text-decoration: none;
+	font-size: 9pt;
+	background-color: lightgray;
+	border: solid lightgray;
+	border-radius: 0.5vw;
+	color: black;
+	transition: 0.25s;
+	cursor: pointer;
+}
+
+.input-button:hover {color: #F7F7F7; transition: 0.25s;}

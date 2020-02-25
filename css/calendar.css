@@ -1,0 +1,119 @@
+/* CSS Document */
+
+.calendar {
+	position: relative;
+	width: 600px;
+	overflow: hidden;
+}
+#calendar {
+	height: 50px;
+	transition: 1s ease;
+}
+.calendar * {box-sizing: border-box; text-align: center;}
+.calendar table {
+	width: 600px;
+	table-layout: fixed;
+	border-collapse: collapse;
+}
+#dropframe {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	transition: 1s ease;
+	transform: translateY(-100%);
+}
+.month {
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 18pt;
+	background-color: #888;
+	justify-content: space-between;
+	position: relative;
+	transition: 0.5s ease;
+}
+
+.month * {
+	background: none;
+	border: none;
+	color: white;
+	font-size: 100%;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+.selection-display {
+	width: 100%;
+	padding: 2% 0;
+	font-size: 77.7%;
+	border-bottom: solid thin;
+	cursor: pointer;
+}
+#selection-display {
+	z-index: 2;
+}
+.hover-display {
+	padding: 7% 0;
+	cursor: default;
+}
+.hover-display span {
+	display: inline-block;
+	min-width: 1.5em;
+}
+
+#hover-status {
+	font-size: 77.7%;
+}
+.month #previous, .month #next {
+	padding: 7% 2%;
+	flex-grow: 0.3;
+	cursor: pointer;
+}
+.calendar thead {
+	background-color: #BBB;
+	color: #555;
+}
+.calendar tbody {
+	background-color: #EEE;
+	color: #888;
+}
+.calendar td, .calendar th {
+	position: relative;
+	padding: 3.57142858%;
+	font-size: 12px;
+	transition: 0.5s ease;
+}
+
+.calendar .unavailable {
+	background-color: #E6E6E6 !important;
+	color: #AAA !important;
+}
+.calendar td:hover {
+	background-color: #40C070;
+	color: white;
+	cursor: pointer;
+}
+
+.calendar .unavailable:hover {
+	background-color: #EF5050 !important;
+	color: white !important;
+	cursor: default;
+}
+
+.today {
+	font-weight: bold;
+}
+.blank, .blank:hover{
+	background-color: #CCC !important;
+	cursor: default !important;
+}
+
+.hover-display, .calendar table, .month #previous, .month #next, .selection-display {
+	-webkit-user-select: none; /* Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+/Edge */
+	user-select: none; /* Standard */
+}
+/* Add media queries for smaller screens */
+@media screen and (max-width:700px) {
+	.calendar {width: 100%;} .month {font-size: 5vw;}
+}

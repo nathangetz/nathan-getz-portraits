@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-158358903-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-158358903-1');
+		</script>
+		<meta charset="UTF-8">
+		<title>Nathan Getz Portraits | Pricing</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/home.css">
+		<link rel="stylesheet" media="screen and (min-width: 600px)" href="css/nav-full.css">
+		<link rel="stylesheet" media="screen and (max-width: 600px)" href="css/nav-mobile.css">
+		<link rel="stylesheet" href="css/floating-boxes.css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400|Open+Sans:300,400&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+		<header id="header"></header>
+		<div class="hero rellax" data-rellax-speed="2">
+			<div class="hero-image rellax" id="portrait-hero" data-rellax-speed="-8">
+				<div class="hero-text rellax" data-rellax-speed="6">Portraits</div>
+			</div>
+		</div>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<div class="floating-box-container">
+		<div class="floating-box textbox rellax" data-rellax-speed="1.5005">
+			<span class="heading">What I offer:</span>
+			<p>Solo Portraits<br>Senior Portraits<br>Couples Portraits<br>Child Portraits</p>
+		</div>
+	  	<div class="floating-box textbox rellax" style="margin-top: 100px; margin-left: 30px;" data-rellax-speed="0.0000">Photoshoots will be at a location of your choice, indoors or outdoors.</div>
+		<div class="floating-box textbox rellax" style="margin-top: 20px; margin-left: 240px;"  data-rellax-speed="0.5001">
+			<span class="heading">Solo Portraits:</span>
+			<p>Close Up<br>Headshot<br>Full Body<br>Studio Lighting</p>
+		</div>
+		<div class="floating-box textbox rellax" style="margin-top: -10px;  margin-left: 450px;"  data-rellax-speed="1.0002">
+			<span class="heading">Senior Portraits:</span>
+			<p>Close Up<br>Headshot<br>Full Body<br>Studio Lighting</p>
+		</div>
+	</div>
+	<br>
+	<div class="" style="margin-top: 250px;" data-rellax-speed="0">
+  	  <p>I base my pricing off of a fixed price for a 60 minute photoshoot, and adjust the price depending on how much time the photoshoot takes. You get a decent price for a decent length shoot. I discount the price more for unused time than I increase it for additional time; however if it takes longer because of difficulties on my part, I won't count that time. This way, if you only need a few shots, you won't have to pay an absurd amount for a short photoshoot. On the other hand, if you want a bunch of beautiful images, you won't have to pay much more to have a longer shoot. I accept: cash, checks, credit/debit cards, PayPal and Venmo.</p>
+	  <p> For every additional 10 minutes, the cost increases by 10% of the base price, and for every 10 unused minutes, 15% of the base price will be discounted.</p>
+		<p>The price per final editied photo is $2.</p>
+	  <p>My pricing is as follows:</p>
+	  <table class="pricing">
+		<tr>
+				<th>Portrait Type</th>
+				<th>Cost for a 60 minute shoot</th>
+				<th>Cost per additional 10 minutes.<br>
+			    (10% of the base price)</th>
+				<th>Discount per unused 10 minutes.<br>
+			    (15% of the base price)</th>
+			</tr>
+		  	<tr>
+				<td>Pet Portraits</td>
+				<td>$50</td>
+	 			<td>+$5</td>
+				<td>$7.5 off</td>
+			</tr>
+			<tr>
+				<td>Solo Portraits</td>
+				<td>$60</td>
+	 			<td>+$6</td>
+				<td>$9 off</td>
+			</tr>
+			<tr>
+				<td>Senior Portraits</td>
+				<td>$65</td>
+				<td>+$6.50</td>
+			  <td>$9.75 off</td>
+			</tr>
+			<tr>
+				<td>Couples Portraits</td>
+				<td>$70</td>
+				<td>+$7</td>
+			  <td>$10.50 off</td>
+			</tr>
+			<tr>
+				<td>Child Portraits<br>(8 &#38; under)</td>
+				<td>$75</td>
+				<td>+$7.50</td>
+			  <td>$11.25 off</td>
+			</tr>
+		  	<tr>
+				<td>Group Portraits</td>
+				<td>$80</td>
+				<td>+$8</td>
+			  <td>$12 off</td>
+			</tr>
+		</table>
+	</div>
+	<br>
+	<span class="heading">Find out how much your photoshoot will cost</span>
+	<table id="calc" class="pricing">
+		<tr>
+			<th>Portrait Type:
+				<select id="type" name="type" aria-invalid="false" onChange="calculatePrice()">
+					<option value="" selected disabled hidden>Pick a type</option>
+					<option value="1">Pet</option>
+					<option value="1.2">Solo</option>
+					<option value="1.3">Senior</option>
+					<option value="1.4">Couples</option>
+					<option value="1.5">Child</option>
+					<option value="1.6">Group</option>
+				</select>
+			</th>
+			<th>
+				Photoshoot Duration (minutes):
+				<input onKeyPress="return isNumberKey(event)" onChange=" isNumberKey(event)" id="input-time" placeholder="Enter a number">
+				<button class="input-button" onClick="checkValue()">Calculate Price</button>
+				<span id="value-error" style="font-size: 9pt; font-weight: 400; color: red; display: none;"></span>
+			</th>
+		</tr>
+	  <tbody id="results" style="display: none">
+			<tr>
+				<td><span id="portrait-type"></span> Portrait (60 minutes):</td>
+				<td id="type-cost"></td>
+			</tr>
+			<tr>
+				<td>Time (<span id="time"></span> minutes):</td>
+				<td id="time-cost"></td>
+			</tr>
+			<tr>
+				<td>Total:</td>
+				<td id="total-cost"></td>
+			</tr>
+		</tbody>
+	</table>
+		<footer id="footer"></footer>
+		<script src="js/load_essentials.js"></script>
+		<script src="js/pricing.js"></script>
+		<script src="js/rellax.min.js"></script>
+		<script>var Rellax = new Rellax('.rellax');</script>
+</body>
+</html>

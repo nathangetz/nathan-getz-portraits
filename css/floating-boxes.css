@@ -1,0 +1,36 @@
+/* CSS Document */
+
+img.floating-box {
+	box-shadow: 4px 20px 24px -4px rgba(0,0,0,0.2);
+	display: inline;
+	position: static;
+	margin-top: 0px;
+	background: #eee;
+}
+.textbox.floating-box {
+	width: auto;
+	max-width: 12em;
+	padding: 1em 4.75em 1em 2em;
+	background: #eee;
+	box-shadow: 4px 20px 24px -4px rgba(0,0,0,0.2);
+	position: absolute;
+}
+.textbox.floating-box p {
+	padding-left: 1.9em;
+	width: inherit;
+}
+/*
+.floating-box {z-index: attr(data-rellax-speed$);}*/
+img.floating-box[data-rellax-speed$="00"] {z-index: 0; width: 30vw;}
+img.floating-box[data-rellax-speed$="01"] {z-index: 1; width: 32vw;}
+img.floating-box[data-rellax-speed$="02"] {z-index: 2; width: 34vw;}
+img.floating-box[data-rellax-speed$="03"] {z-index: 3; width: 36vw;}
+img.floating-box[data-rellax-speed$="04"] {z-index: 4; width: 38vw;}
+img.floating-box[data-rellax-speed$="05"] {z-index: 5; width: 40vw;}
+
+.textbox.floating-box[data-rellax-speed$="00"] {z-index: 0; font-size: 0.85em;}
+.textbox.floating-box[data-rellax-speed$="01"] {z-index: 1; font-size: 0.88em;}
+.textbox.floating-box[data-rellax-speed$="02"] {z-index: 2; font-size: 0.91em;}
+.textbox.floating-box[data-rellax-speed$="03"] {z-index: 3; font-size: 0.94em;}
+.textbox.floating-box[data-rellax-speed$="04"] {z-index: 4; font-size: 0.97em;}
+.textbox.floating-box[data-rellax-speed$="05"] {z-index: 5; font-size: 1em;}

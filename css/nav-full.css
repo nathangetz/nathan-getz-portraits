@@ -1,0 +1,42 @@
+/* CSS Document */
+
+
+/*Navigation bar container*/
+header {
+    background-color: white;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: baseline;
+    border: 0 solid white;
+    border-width: 1vw 10vw 1vw 10vw;
+    -webkit-box-shadow: 0 0 16px 4px rgba(0,0,0,0.10);
+	-moz-box-shadow: 0 0 16px 4px rgba(0,0,0,0.10);
+    box-shadow: 0 0 16px 4px rgba(0,0,0,0.10);
+}
+/*header * {line-height: 1em;}*/
+header > a {color: black; font-size: 22pt; margin-right: 2ex;}
+header nav {display: flex; flex-flow: row wrap; flex-grow: 1; justify-content: space-between; align-items: baseline;}
+header nav a:not(.button) {color: #555; transition: 0.25s;}
+header .current-page {color: black;}
+header nav a:not(.button):hover {color: black; transition: 0.25s;}
+
+.button {
+	background-color: lightgray;
+	border: solid lightgray;
+	border-width: 0.5vw 1vw;
+	border-radius: 0.4vw;
+	color: black;
+	transition: 0.25s;
+}
+
+.button:hover {color: #F7F7F7; transition: 0.25s;}
+
+/*Bio Settings*/
+.bio {overflow: hidden;margin-bottom: 15px;}
+.bio img {width: 240px; margin-right: 15px; float: left;}
+.bio p {margin-left: 15px; margin: 0; text-align: justify;}
