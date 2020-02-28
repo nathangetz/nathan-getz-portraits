@@ -7,8 +7,22 @@ ErrorDocument 405 /not-allowed.html
 ErrorDocument 406 /not-allowed.html
 ErrorDocument 407 /not-allowed.html
 
-Redirect /home /
-Redirect /home/ /
-RewriteRule ^portfolio/$ /portfolio.html [L,NC]
-RewriteRule ^pricing/$ /pricing.html [L,NC]
-RewriteRule ^request/$ /request.html [L,NC]
+RedirectMatch 301 ^/home/?$ /
+RedirectMatch 301 ^/portfolio$ /portfolio/
+RedirectMatch 301 ^/pricing/$ /pricing
+RedirectMatch 301 ^/editing/$ /editing
+RedirectMatch 301 ^/aerial/$ /aerial
+RedirectMatch 301 ^/equipment/$ /equipment
+RedirectMatch 301 ^/photoshoot/?$ /photoshoot/new-request
+RedirectMatch 303 ^/images/?$ /
+RedirectMatch 303 ^/css/?$ /
+RedirectMatch 303 ^/js/?$ /
+RedirectMatch 303 ^/images/portfolio/?$ /
+RedirectMatch 303 ^/images/portfolio/full/?$ /
+
+RewriteRule ^portfolio/$ /portfolio.html [NC]
+RewriteRule ^pricing$ /pricing.html [L,NC]
+RewriteRule ^editing$ /not-finished.html [L,NC]
+RewriteRule ^aerial$ /not-finished.html [L,NC]
+RewriteRule ^equipment$ /not-finished.html [L,NC]
+RewriteRule ^photoshoot/new-request$ /not-finished.html [L,NC]
