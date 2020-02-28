@@ -1,0 +1,14 @@
+RewriteEngine On
+
+ErrorDocument 404 /404.html
+ErrorDocument 401 /not-allowed.html
+ErrorDocument 403 /not-allowed.html
+ErrorDocument 405 /not-allowed.html
+ErrorDocument 406 /not-allowed.html
+ErrorDocument 407 /not-allowed.html
+
+Redirect /home /
+Redirect /home/ /
+RewriteRule ^portfolio/$ /portfolio.html [L,NC]
+RewriteRule ^pricing/$ /pricing.html [L,NC]
+RewriteRule ^request/$ /request.html [L,NC]

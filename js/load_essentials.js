@@ -5,12 +5,12 @@
 document.getElementById("header").innerHTML =
 	"<a href='/' target='_self'>Nathan Getz Portraits</a>"+
 			"<nav>"+
-				"<a href='portfolio.html' target='_self'>Portfolio</a>"+
-				"<a href='pricing.html' target='_self'>Portrait Pricing</a>"+
-				"<a href='not-finished.html' target='_self'>Photo Editing</a>"+
-				"<a href='not-finished.html' target='_self'>Aerial Photography</a>"+
-				"<a href='not-finished.html' target='_self'>Equipment</a>"+
-				"<a href='not-finished.html' class='button' target='_self'>Request a Photoshoot</a>"+
+				"<a href='/portfolio/' target='_self'>Portfolio</a>"+
+				"<a href='/pricing/' target='_self'>Portrait Pricing</a>"+
+				"<a href='/not-finished.html' target='_self'>Photo Editing</a>"+
+				"<a href='/not-finished.html' target='_self'>Aerial Photography</a>"+
+				"<a href='/not-finished.html' target='_self'>Equipment</a>"+
+				"<a href='/not-finished.html' class='button' target='_self'>Request a Photoshoot</a>"+
 			"</nav>";
 document.getElementById("footer").innerHTML =
 	"<hr>"+
