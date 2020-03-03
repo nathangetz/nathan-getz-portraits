@@ -1,5 +1,4 @@
 // JavaScript Document
-
 function load_images(path, length) {
     var seq = ["3.7505", "3.0004", "2.2503", "1.5002", "0.7501", "0.0000"];
     for(var i = 1; i <= length; i++) {
