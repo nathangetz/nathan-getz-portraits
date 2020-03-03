@@ -10,7 +10,7 @@ document.getElementById('header').innerHTML =
 				'<a href="/editing" target="_self">Photo Editing</a>'+
 				'<a href="/aerial" target="_self">Aerial Photography</a>'+
 				'<a href="/equipment" target="_self">Equipment</a>'+
-				'<a href="/photoshoot" class="button" target="_self">Request a Photoshoot</a>'+
+				'<a href="/photoshoot/new-request" class="button" target="_self">Request a Photoshoot</a>'+
 			'</nav>';
 document.getElementById('footer').innerHTML =
 	'<hr>'+

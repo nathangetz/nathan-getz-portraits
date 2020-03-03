@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+    <head>
+		<meta charset="UTF-8">
+        <meta name="robots" content="noindex">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap" rel="stylesheet">
+		<title>Random Direction</title>
+		<style>
+			body {
+				background-color: green;
+				margin: 0;
+				width: 100vw;
+				cursor: pointer;
+				-webkit-touch-callout: none;
+				-webkit-user-select: none;
+				-khtml-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+			}
+			h1 {color: white;
+				font-size: 25vw;
+				font-weight: 100;
+				font-family: "Open Sans";
+				position: fixed;
+				top: 50%;
+				left: 50%;
+				transform: translateX(-50%) translateY(-110%)}
+			div {
+				height: 100vh;
+				width: 100vw;
+				position: fixed;
+				z-index: 1;
+			}
+		</style>
+	</head>
+
+	<body onLoad="generate()" onClick="generate()">
+		<!--h1 id="page_title" style="">Decision Maker</h1-->
+		<div></div>
+		<h1 id="result"></h1>
+		<script>
+			const directions = ["Left", "Straight", "Right"];
+			let prev = 0;
+			function generate() {
+				let rand = getRandomInt(0, 2);
+				if (getRandomInt(0, 1) == 0) {rand = prev = (rand == prev) ? (rand + 1 > 2) ? rand - 2 : rand + 1 : rand;}
+				else {rand = prev = (rand == prev) ? (rand - 1 < 0) ? rand + 2 : rand - 1 : rand;}
+				document.getElementById("result").innerHTML = directions[rand];
+			}
+			function getRandomInt(min, max) {
+				min = Math.ceil(min); max = Math.floor(max);
+				return Math.floor(Math.random() * (max - min + 1)) + min;
+			}
+		</script>
+	</body>
+</html>
