@@ -85,8 +85,8 @@ hr {margin: 15px 0; height: 1px; background-color: dimgray; border: none;}
 }
 
 /*Banner image*/
-#portfolio-hero {background-image: url("../images/portfolio-hero.jpg");}
-#portrait-hero {background-image: url("../images/portrait-hero.jpg")}
+#portfolio-hero {background-image: url("../images/portfolio_hero.jpg");}
+#portrait-hero {background-image: url("../images/portrait_hero.jpg")}
 
 .banner {
 	font-size: 55pt;
