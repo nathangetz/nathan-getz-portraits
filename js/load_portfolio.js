@@ -6,6 +6,6 @@ function load_images(length) {
         document.getElementById("content").innerHTML += createElement(a + i.toString(),  seq[(i - 1) % 6]);
     }
 }
-function createElement(path, file, rellax) {
+function createElement(file, rellax) {
 	return '<img class="rellax floating-box" src="' + file + '_thumb.jpg" alt="" data-rellax-speed="' + rellax + '">';
 }
