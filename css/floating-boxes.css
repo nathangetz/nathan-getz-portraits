@@ -5,6 +5,7 @@ img.floating-box {
 	display: inline;
 	position: static;
 	margin-top: 0px;
+	margin-left: 0px;
 	background: #eee;
 }
 .textbox.floating-box {
