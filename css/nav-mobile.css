@@ -1,9 +1,8 @@
 /* CSS Document */
-body {margin-top: 20vh;}
 
 /*Navigation bar container*/
-header {position: relative;}
-header > a {
+#header {position: relative;}
+#header > a {
 	background-color: white;
     position: fixed;
 	z-index: 100;
@@ -15,11 +14,11 @@ header > a {
 	color: black;
 	font-size: 22pt;
 }
-header nav {display: flex; background-color: white; flex-flow: column nowrap;}
-header nav a {color: #555; width: auto; transition: 0.5s;}
-header #active, header nav a:hover {color: black; transition: 0.5s;}
+#header nav {display: flex; background-color: white; flex-flow: column nowrap;}
+#header nav a {color: #555; width: auto; transition: 0.5s;}
+#header #active, header nav a:hover {color: black; transition: 0.5s;}
 
-.button {
+#header nav a.button {
 	background-color: gray;
 	border: 7px solid gray;
 	border-radius: 3px;
@@ -30,9 +29,4 @@ header #active, header nav a:hover {color: black; transition: 0.5s;}
 	transition: 0.5s;
 }
 
-.button:hover {border-width: 7px;}
-
-
-/*Bio Settings*/
-.bio img {width: 100%; height: auto; margin-bottom: 15px;}
-.bio p {margin: 0; text-align: justify;}
+#header nav a.button:hover {border-width: 7px;}

@@ -1,0 +1,6 @@
+/* CSS Document */
+body {margin-top: 20vh;}
+
+/*Bio Settings*/
+.bio img {width: 100%; height: auto; margin-bottom: 15px;}
+.bio p {margin: 0; text-align: justify;}

@@ -1,0 +1,6 @@
+/* CSS Document */
+
+/*Bio Settings*/
+.bio {overflow: hidden;margin-bottom: 15px;}
+.bio img {width: 240px; margin-right: 15px; float: left;}
+.bio p {margin-left: 15px; margin: 0; text-align: justify;}
