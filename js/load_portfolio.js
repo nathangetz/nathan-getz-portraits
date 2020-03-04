@@ -7,5 +7,5 @@ function load_images(length) {
     }
 }
 function createElement(file, rellax) {
-	return '<img class="rellax floating-box" src="' + file + '_thumb.jpg" alt="" data-rellax-speed="' + rellax + '">';
+	return '<img class="rellax floating-box" onClick="openImage(this, \'' + file + '.jpg\')" src="' + file + '_thumb.jpg" alt="" data-rellax-speed="' + rellax + '">';
 }

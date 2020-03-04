@@ -1,0 +1,33 @@
+/* CSS Document */
+
+#open-image {
+	position: fixed;
+	background: rgba(0,0,0,0);
+	z-index: -5;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	transition: background 1s ease;
+}
+
+#open-image.active {
+	background: rgba(0,0,0,0.5);
+	z-index: 101;
+}
+#open-image img {
+	position: fixed;
+	object-fit: contain;
+	max-width: 90%;
+	max-height: 90%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0);
+	opacity: 0;
+	transition: transform 0.5s ease, opacity 0.4s ease 0.1s;
+}
+#open-image.active img {
+	transform: translate(-50%, -50%) scale(1);
+	opacity: 1;
+	transition: transform 0.5s ease, opacity 0.4s ease 0s;
+}
