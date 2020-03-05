@@ -1,14 +1,18 @@
 // JavaScript Document
 
 const frame = document.getElementById("open-image");
-const image = document.getElementById("image");
+var image = document.getElementById("image");
 
-function openImage(clicked, file) {
+function openImage(element, file) {
 	setImage(file);
-	frame.classList.add("active");
+    while(image.complete != true){setTimeout(0.1)}
+    frame.classList.add("active");
 }
 
 
-function setImage(clicked) {
-	image.src = "../full/" + clicked;
+function setImage(file) {
+    //image.src = "";
+	//image.src = "../full/" + file;
+    frame.innerHTML = "";
+    frame.innerHTML = '<img id="image" onLoad="this.parentElement.classList.add(\'active\')" onClick="this.parentElement.classList.remove(\'active\')" src="../full/' + file + '">'
 }
